@@ -1,47 +1,44 @@
 Octoblu
+  a platform for automating the internet of things.
 
-The Internat Of Everyding (Integration of Everything #IoT')
+Integration of Everything
 
-
-Octoblu is a platform for automating the internet of things.
 
 (Powerful enough for enterprise, simple enough for home)
 
+---
 What is octoblu even?
 
-Connect
-Design
-Process (pending better term/compute?)
-Analyze (pending better term/predictions-machine learning)
-Ground breaking security model
+* Connect
+    Talking to devices is hard - we did the hard part, so you don't have to.
+    Even when your devices are connected, it can be difficult for them to work together.
 
+* Design
+    Our designer makes that simple, allowing you to build automations between anything connected to our platform.
 
-  Connect hardware & software
-  Design automations
+* Compute
+    These interactions are stored in our secure cloud, so you don't have to worry about maintaining them.
+    Meshblu, our open source mesh network, is always learning. This ensures that your interactions become smarter over time.
 
-  Secure device communication
+* Security
+    Security is important to us. That's why we give you complete control over your devices with our revolutionary security model.
+---
 
-  Process - running automations in the cloud, forever
-  Analyze - machine learning, prediction
-
-
+Learn More
   Octoblu Ecosystem
-    Meshblu
-    Octoblu
-    Flow-runner
-    Gateblu
-    Mobile Apps
-    Microblu
 
-Vertical Markets?
+---
 
 Here's what you can make with octoblu
 [insert awesome-not-lame examples here]
+Home | Enterprise | Developer
+bill of materials + 1 sentence description. Click to go to import flow.
 
+---
 
-TRY IT NOW FOR THE LOW LOW COST OF $0.00 A MONTH WOW
+Get started with Octoblu! (login.octoblu.com)
 
-
+---
 
 Footer Links
   - Integrations
