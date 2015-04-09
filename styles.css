@@ -7,25 +7,70 @@ html {
   box-sizing: inherit;
 }
 
-html, body {
-  height: 100%;
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
-.container {
-  width: 80%;
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+html, body {
+  height: 100%;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.75em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.inner-wrap {
+  width: 75%;
   margin: 0 auto;
-  padding-top: 250px;
+  padding: 200px 0;
 }
 
 .button-primary {
   text-transform: uppercase;
-  text-decoration:none;
   padding: 15px 20px;
   /* border: 1px solid #FFF; */
   color: #FFF;
   background: #0db2ef;
 
-  font-weight: 300;
   display: inline-block;
 }
 .hero {
@@ -35,39 +80,57 @@ html, body {
   color: #FFF;
 }
 
-.hero__header{
-  margin: 0;
-  font-weight: 300;
-  font-size: 4em;
+.hero__header {
+  margin-bottom: 25px;
+  line-height: 1;
 }
 
 .hero__sub-header {
-  font-weight: 300;
-  font-size: 1.7em;
   width: 80%;
   margin-bottom: 30px;
+  line-height: 1.25;
 }
 
-.pillar-container {
+.grid-list {
   width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  display: -ms-prefix;
-
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-
-  flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-
-  justify-content: space-around;
-  -webkit-flex-content: space-around;
-  -ms-flex-content: space-around;
+  margin: 0;
+  padding: 0;
 }
-.pillar {
-  flex: 1;
-  max-width: 25%;
-  background-color: oldlace;
+
+.grid-list__item {
+  width: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 40px 25px;
+  float: left;
+
+  min-height: 100px;
+}
+
+.grid-list__header {
+
+}
+
+.grid-list__body {
+
+}
+
+.footer {
+  background: #0db2ef;
+  color: #C3E7F4;
+}
+
+.footer__links {
+  text-align: center;
+}
+
+.footer__link {
+  display: inline;
+  padding: 0 10px;
+  color: #FFF;
+}
+
+
+.pillars {
+  text-align: center;
 }

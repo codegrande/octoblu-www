@@ -10,7 +10,6 @@ Integration of Everything
 What is octoblu even?
 
 * Connect
-    Talking to devices is hard - we did the hard part, so you don't have to.
     Even when your devices are connected, it can be difficult for them to work together.
 
 * Design
