@@ -1,0 +1,49 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 250px;
+}
+
+.button-primary {
+  text-transform: uppercase;
+  text-decoration:none;
+  padding: 15px 20px;
+  /* border: 1px solid #FFF; */
+  color: #FFF;
+  background: #0db2ef;
+
+  font-weight: 300;
+  display: inline-block;
+}
+.hero {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  background: #2A2D2F;
+  color: #FFF;
+}
+
+.hero__header{
+  margin: 0;
+  font-weight: 300;
+  font-size: 4em;
+}
+
+.hero__sub-header {
+  font-weight: 300;
+  font-size: 1.7em;
+  width: 80%;
+  margin-bottom: 30px;
+}
