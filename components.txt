@@ -39,9 +39,6 @@
     - [Google Play](https://play.google.com/store/apps/details?id=com.octoblu.blu&hl=en)
     - [App Store](https://itunes.apple.com/us/app/blu/id938900017?mt=8)
 
-  Mobiblu
-    - allows you to connect your mobile device to Gateblu to obtain
-
 ---
 
 ###Microblu
