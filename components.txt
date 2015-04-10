@@ -1,7 +1,18 @@
 Octoblu Components
   Meshblu
+    Meshblu is an open source machine-to-machine instant messaging network and API.
+
   Octoblu
+
+
   Flow-runner
+
+
   Gateblu
+    Gateblu allows you to connect smart devices, motors, servos, sensors, and additional protocols to Meshblu and Octoblu!
+
   Mobile Apps
+
+
   Microblu
+    Microblu OS allows you to connect and control your Arduino via the Meshblu open source IoT platform and API.
