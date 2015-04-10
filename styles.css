@@ -134,6 +134,12 @@ a:hover {
 
 }
 
+.grid-list__icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+}
+
 .components {
   background: #2A2D2F;
   color: #C3E7F4;
@@ -156,5 +162,3 @@ a:hover {
   text-decoration: none;
   color: #DAF0F9;
 }
-
-.pillars {}
