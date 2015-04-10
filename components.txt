@@ -1,18 +1,48 @@
-Octoblu Components
-  Meshblu
-    Meshblu is an open source machine-to-machine instant messaging network and API.
+##Octoblu Components
 
-  Octoblu
+---
 
+###[Meshblu](https://developer.octoblu.com)
+  Meshblu is an open source machine-to-machine messaging network and API.
 
-  Flow-runner
+  It supports REST, Javascript, MQTT, CoAp, and websocket protocols.
 
+---
 
-  Gateblu
-    Gateblu allows you to connect smart devices, motors, servos, sensors, and additional protocols to Meshblu and Octoblu!
+###[Octoblu](https://app.octoblu.com)
+  Octoblu is a convenience layer for Meshblu. There are a few different parts to Octoblu.
+  - Designer
+  - Templates
+      - Share/Import flows
+  - Process
+      - Monitor device messaging and uptime
+  - Analyze
+  - Admin
 
-  Mobile Apps
+---
 
+###Flow-runner
+  Flow runner works in conjunction with your Octoblu user account to determine which flows to run.
 
-  Microblu
-    Microblu OS allows you to connect and control your Arduino via the Meshblu open source IoT platform and API.
+  It also takes care of the process of deploying/stopping the flows.
+
+---
+
+###[Gateblu](https://gateblu.octoblu.com)
+  Gateblu allows you to connect smart devices, motors, servos, sensors, and additional protocols to Meshblu and Octoblu!
+
+---
+
+###Mobile Apps
+  Blu
+  - allows you to trigger triggers in your flows
+    - [Google Play](https://play.google.com/store/apps/details?id=com.octoblu.blu&hl=en)
+    - [App Store](https://itunes.apple.com/us/app/blu/id938900017?mt=8)
+
+  Mobiblu
+    - allows you to connect your mobile device to Gateblu to obtain
+
+---
+
+###Microblu
+  Microblu OS allows you to connect and control your Arduino via the Meshblu open source IoT platform and API.
