@@ -69,14 +69,22 @@ a:hover {
   padding: 250px 0;
 }
 
-.button-primary {
+.align-center {
+  text-align: center
+}
+
+.button {
   text-transform: uppercase;
   padding: 15px 20px;
-  /* border: 1px solid #FFF; */
+  margin-right: 30px;
   color: #FFF;
-  background: #0db2ef;
-
   display: inline-block;
+  border: 1px solid #FFF;
+}
+
+.button--primary {
+  background: #0db2ef;
+  border-color: #0db2ef;
 }
 
 .hero {
@@ -121,14 +129,17 @@ a:hover {
 
 }
 
+.ecosystem {
+  background: #2A2D2F;
+  color: #C3E7F4;
+}
+
 .footer {
   background: #0db2ef;
   color: #C3E7F4;
 }
 
-.footer__links {
-  text-align: center;
-}
+.footer__links {}
 
 .footer__link {
   display: inline;
@@ -140,6 +151,5 @@ a:hover {
   text-decoration: none;
   color: #DAF0F9;
 }
-.pillars {
-  text-align: center;
-}
+
+.pillars {}
