@@ -58,10 +58,15 @@ a:hover {
   text-decoration: underline;
 }
 
+
 .inner-wrap {
   width: 75%;
   margin: 0 auto;
-  padding: 200px 0;
+  padding: 125px 0;
+}
+
+.inner-wrap--hero {
+  padding: 250px 0;
 }
 
 .button-primary {
@@ -73,6 +78,7 @@ a:hover {
 
   display: inline-block;
 }
+
 .hero {
   height: 100%;
   font-family: 'Lato', sans-serif;
@@ -130,7 +136,10 @@ a:hover {
   color: #FFF;
 }
 
-
+.footer__link--social:hover {
+  text-decoration: none;
+  color: #DAF0F9;
+}
 .pillars {
   text-align: center;
 }
