@@ -1,13 +1,9 @@
 Octoblu
-  a platform for automating the internet of things.
-
-Integration of Everything
-
-
-(Powerful enough for enterprise, simple enough for home)
+Internet of Everthing
+Talking to devices is hard. We did the hard part, so you don't have to.
 
 ---
-What is octoblu even?
+What does that mean!?
 
 * Connect
     Even when your devices are connected, it can be difficult for them to work together.
@@ -23,15 +19,17 @@ What is octoblu even?
     Security is important to us. That's why we give you complete control over your devices with our revolutionary security model.
 ---
 
-Learn More
-  Octoblu Ecosystem
+Octoblu Components
+  [link to another page]
+  see ./components.txt
 
 ---
 
-Here's what you can make with octoblu
+What can I do with Octoblu?
+
 [insert awesome-not-lame examples here]
-Home | Enterprise | Developer
-bill of materials + 1 sentence description. Click to go to import flow.
+[categories: Home | Enterprise | Developer]
+[possible idea format: bill of materials + 1 sentence description. Click to go to import flow.]
 
 ---
 

@@ -87,6 +87,11 @@ a:hover {
   border-color: #0db2ef;
 }
 
+.button--login {
+  float: right;
+  margin: 30px;
+}
+
 .hero {
   height: 100%;
   font-family: 'Lato', sans-serif;
@@ -129,7 +134,7 @@ a:hover {
 
 }
 
-.ecosystem {
+.components {
   background: #2A2D2F;
   color: #C3E7F4;
 }
