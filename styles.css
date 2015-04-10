@@ -61,6 +61,7 @@ a:hover {
 
 .inner-wrap {
   width: 75%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 125px 0;
 }
@@ -82,14 +83,31 @@ a:hover {
   border: 1px solid #FFF;
 }
 
+.button:hover {
+  text-decoration: none;
+}
+
 .button--primary {
   background: #0db2ef;
   border-color: #0db2ef;
 }
 
-.button--login {
-  float: right;
-  margin: 30px;
+.header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.login-link {
+  color: #FFF;
+
+  position: absolute;
+  top: 0;
+  right: 30px;
+  line-height: 50px;
 }
 
 .hero {
@@ -107,6 +125,8 @@ a:hover {
 .hero__sub-header {
   width: 80%;
   margin-bottom: 30px;
+
+  font-weight: 100;
   line-height: 1.25;
 }
 
