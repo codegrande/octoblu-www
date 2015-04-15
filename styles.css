@@ -102,15 +102,25 @@ a:hover {
 }
 
 .login-link {
-  color: #FFF;
-
+  color: #0db2ef;
   position: absolute;
   top: 0;
   right: 30px;
   line-height: 50px;
 }
 
+.hackster {
+  display: block;
+  width: 100%;
+}
+
+iframe {
+  height: 260px;
+  padding: 10px;
+}
+
 .hero {
+  min-height: 500px;
   height: 100%;
   font-family: 'Lato', sans-serif;
   background: #2A2D2F;
@@ -158,11 +168,13 @@ a:hover {
   width: 90px;
   height: 90px;
   border-radius: 45px;
+  border: 2px solid #eee;
+  padding: 20px 10px;
 }
 
 .components {
   background: #2A2D2F;
-  color: #C3E7F4;
+  color: #FFF;
 }
 
 .footer {
