@@ -1,0 +1,42 @@
+language: node_js
+sudo: false
+cache:
+  bundler: true
+  directories:
+  - node_modules
+node_js:
+- '0.10'
+env:
+  global:
+  - AWS_ACCESS_KEY_ID=AKIAIT4X4NDGM2WVL6VA
+  - DOCKER_USERNAME=octoblu
+  - DEPLOY_APPLICATION_NAME=octoblu-www
+  - DEPLOY_REGION=us-west-2
+  - DEPLOY_BUCKET=octoblu-deploy
+  - DEPLOYMENT_GROUP=master
+  - DEPLOY_KEY=octoblu-www/octoblu-www-$TRAVIS_COMMIT.zip
+  - secure: rVRMGPpAZYlWrzVLckvSmlm3wIFtTYuMaZ05wYjit/B1drsDOkk51zPfF/GCbJWVWnBOL0Kc6Xl/w45ySGIMcybeV3xn3HNPuaF989WJLbUSJ9KTzicP5S9hmlT6OFGVDrD1DzMbn+mNS71ogS2SdIMChSPd5waBaFLwmcpOEMI=
+  - secure: jo2se8Tnf+Otrn9t4KnZFS79mMHLzoAM3r0GM3S02RY++KpHEJ5nd4mlNPpArmuIcsts9hIgCINn38ZitBzcaXk4BO76UBglYBaCFD6tDicSQINpISgFFF26fQcM279M03QK/r3zEfDQ1YpsahkQcdWzxJ74yOzRFvW6yQ3tJdU=
+after_success:
+- .kubernetes/travis_after_success
+deploy:
+- provider: s3
+  access_key_id: AKIAIT4X4NDGM2WVL6VA
+  secret_access_key: &1
+    secure: PCSRlI4G3aPbYbMPIGy4AZaga60ofyTxlXWRcAh25CArkdk9caN8+F/JtaQICKdoNNbTsn4WNSU8wyoinikVcxyquM5umRe4Ru81eQp/nVhVkRpjPUVkzeJLTGQhVCfaF8O4Wf9kSiM2QsqaJYkAbim3D1RUzYcZYxdJ6aEtk4Q=
+  local_dir: dpl_cd_upload
+  skip_cleanup: true
+  bucket: octoblu-deploy
+  on:
+    branch: master
+- provider: codedeploy
+  access_key_id: AKIAIT4X4NDGM2WVL6VA
+  secret_access_key: *1
+  bucket: octoblu-deploy
+  key: docker-builder/octoblu-www-$TRAVIS_COMMIT.zip
+  bundle_type: zip
+  region: us-west-2
+  application: docker-builder
+  deployment_group: octoblu-www
+  on:
+    branch: master

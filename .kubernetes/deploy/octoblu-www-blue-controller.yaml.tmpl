@@ -1,0 +1,26 @@
+id: octoblu-www-blue-controller
+kind: ReplicationController
+apiVersion: v1beta1
+labels:
+  name: octoblu-www-blue
+  version: "$SHORT_COMMIT"
+desiredState:
+  replicas: 2
+  replicaSelector:
+    name: octoblu-www-blue
+    version: "$SHORT_COMMIT"
+  podTemplate:
+    labels:
+      name: octoblu-www-blue
+      app: octoblu-www-blue
+      version: "$SHORT_COMMIT"
+    desiredState:
+      manifest:
+        version: v1beta1
+        id: octoblu-www-blue
+        containers:
+          - name: octoblu-www-blue
+            image: octoblu/octoblu-www:$SHORT_COMMIT
+            ports:
+              - containerPort: 80
+
