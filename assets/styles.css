@@ -190,6 +190,17 @@ iframe {
   background-image: radial-gradient(circle farthest-side at right bottom,#ECC5D1,#2A2D2F);
 }
 
+.hero__login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 12px;
+
+  background: rgba(0,0,0, 0.3);
+  color: #FFF;
+  font-size: 0.8em;
+}
+
 .herox {
   background: #FEFEFF;
   color: #333;
