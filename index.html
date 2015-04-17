@@ -20,82 +20,143 @@
       <a class="login-link" href="#">Login</a>
     </header>
 
-    <div class="hero">
+    <section class="hero">
       <div class="inner-wrap inner-wrap--hero">
+        <img src="http://s3-us-west-2.amazonaws.com/octoblu-logos/octoblu-inverse-icon.png" alt="Octoblu" class="hero__logo"/>
         <h1 class="hero__header">The Internet of <br/> Everything.</h1>
         <h2 class="hero__sub-header">Talking to devices is hard. We did the hard part, so you don't have to.</h2>
 
-        <a class="button button--primary hero__button" href="#">Get Started</a>
+        <a class="button button--primary hero__button" href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign">Get Started</a>
         <!-- <a class="" href="#">Learn More</a> -->
       </div>
-    </div>
+    </section>
 
-    <div class="align-center pillars">
+    <section class="align-center pillars">
       <div class="inner-wrap inner-wrap--pillars">
-
-        <ul class="cf grid-list">
-          <li class="grid-list__item">
+        <h2 class="section__header">With Octoblu you can..</h2>
+        <div class="cf grid-list">
+          <div class="grid-list__item">
             <i class="grid-list__icon fa fa-plug fa-3x"></i>
             <h3 class="grid-list__header">Connect</h3>
             <div class="grid-list__body">
               <p>
-                Even when your devices are connected, it can be difficult for them to work together.
+                Even when your devices are connected, it can be difficult for
+                them to work together. Our platform enables you to have devices
+                communicate seamlessly accross multiple protocols.
+                We support HTTP/S, Websockets, COAP and MQTT.
               </p>
             </div>
-          </li>
-          <li class="grid-list__item">
+          </div>
+
+          <hr>
+
+          <div class="grid-list__item">
             <i class="grid-list__icon fa fa-edit fa-3x"></i>
             <h3 class="grid-list__header">Design</h3>
             <div class="grid-list__body">
               <p>
-                Our designer makes that simple, allowing you to build automations between anything connected to our platform.
+                Our designer makes automation simple, allowing you to build interactions
+                between devices visually. You can also share, import &amp; export your automated flows.
               </p>
             </div>
-          </li>
-          <li class="grid-list__item">
+          </div>
+
+          <hr>
+
+          <div class="grid-list__item">
             <i class="grid-list__icon fa fa-cloud fa-3x"></i>
             <h3 class="grid-list__header">Compute</h3>
             <div class="grid-list__body">
               <p>
-                These interactions are stored in our secure cloud, so you don't have to worry about maintaining them.
+                Automated workflows are stored securely and designed to run with
+                high-availability in our cloud.
+                You can easily design and deploy automated workflows to run 24/7 in
+                sandboxed containers.
               </p>
             </div>
-          </li>
-          <li class="grid-list__item">
+          </div>
+
+          <hr>
+
+          <div class="grid-list__item">
             <i class="grid-list__icon fa fa-lock fa-3x"></i>
-            <h3 class="grid-list__header">Security</h3>
+            <h3 class="grid-list__header">Analyze</h3>
             <div class="grid-list__body">
               <p>
-                Security is important to us.</br>That's why we give you complete control over your devices with our revolutionary security model.
+                With Octoblu, you can gain insights from all data related to your connected
+                devices. Not only can you visualize data from your connected devices in our platform, you can also easily feed your device data into your existing big-data aggregation tools like Splunk, ElasticSearch and TempoIQ.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="align-center security">
+      <div class="inner-wrap">
+        <h2 class="security__header">Security</h2>
+        <h3 class="security__body">Our platform enables secure device communication using encryption and our fine-grained permissions model. Octoblu was designed with security being a primary focus and not an after thought.</h3>
+      </div>
+    </section>
+
+    <section class="align-center partners">
+      <div class="inner-wrap">
+        <h2>Partners</h2>
+
+        <ul class="partner-list">
+          <li class="partner-list__item partner-list__item--intel">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/intel.png" alt="Intel">
           </li>
+
+          <li class="partner-list__item partner-list__item--microsoft">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/microsoft.png" alt="Microsoft">
+          </li>
+
+          <li class="partner-list__item partner-list__item--splunk">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/splunk.png" alt="Splunk">
+          </li>
+
+          <li class="partner-list__item partner-list__item--amazon_web_services">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/amazon_web_services.png" alt="Amazon Web Services">
+          </li>
+
+          <li class="partner-list__item partner-list__item--plivo">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/plivo.png" alt="Plivo ">
+          </li>
+
+          <li class="partner-list__item partner-list__item--local-motors">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/local-motors.gif" alt="Local Motors">
+          </li>
+
+          <li class="partner-list__item partner-list__item--allseen_alliance">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/allseen_alliance.png" alt="Allseen Alliance">
+          </li>
+
+          <li class="partner-list__item partner-list__item--ge-firstbuild">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/ge-firstbuild.gif" alt="firstbuild">
+          </li>
+
+          <li class="partner-list__item partner-list__item--thingsee">
+            <img src="https://s3.amazonaws.com/octoblu-www/partners/thingsee.png" alt="Thingsee">
+          </li>
+
         </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="align-center components">
+    <section class="align-center try-now">
       <div class="inner-wrap">
-        <h2>Solutions</h2>
+        <a href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign" class="button button--secondary">Try Octoblu Now</a>
       </div>
-    </div>
-
-    <div class="align-center platform">
-      <div class="inner-wrap">
-        <a href="#" class="button button--secondary">Deploy your first Flow</a>
-      </div>
-    </div>
+    </section>
 
     <footer class="align-center footer">
       <div class="inner-wrap">
         <p class="footer__links">
-          <a href="#" class="footer__link">Intergrations</a> •
-          <a href="#" class="footer__link">Pricing</a> •
-          <a href="#" class="footer__link">Apps</a> •
-          <a href="#" class="footer__link">Developers</a> •
-          <a href="#" class="footer__link">Contact Us</a> •
-          <a href="#" class="footer__link">Press Kit</a> •
-          <a href="#" class="footer__link">Legal</a>
+          <a href="//blog.citrix.com/team/octoblu/" class="footer__link">Blog</a> •
+          <a href="//developer.octoblu.com" class="footer__link">Developers</a> •
+          <a href="https://gateblu.octoblu.com/" class="footer__link" title="Octoblu's IoT Gateway">Gateblu</a> •
+          <a href="mailto://info@octoblu.com" class="footer__link">Contact Us</a>
         </p>
 
         <p class="footer__links">
@@ -114,7 +175,12 @@
           <a href="https://instagram.com/octobluinc/" target="_blank" class="footer__link footer__link--social" title="Instagram">
             <i class="ss-icon">&#xF641;</i>
           </a>
+          <a href="//www.youtube.com/playlist?list=PLyh2CvBTlon4R_ibknRl9CCKfn_1eAted" target="_blank" class="footer__link footer__link--social" title="Youtube">
+            <i class="ss-icon ss-youtube"></i>
+          </a>
         </p>
+
+        <p>Octoblu, a <a href="//citrix.com" class="footer__link footer__link--citrix ">Citrix</a> company</p>
 
       </div>
     </footer>
