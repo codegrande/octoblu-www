@@ -379,7 +379,6 @@ hr {
           transform: translateY(-55%);
 }
 
-
 .footer {
   background: #0db2ef;
   color: #C3E7F4;
@@ -398,9 +397,13 @@ hr {
   text-decoration: underline;
 }
 
-
-
 .footer__link--social:hover {
   text-decoration: none;
   color: #DAF0F9;
+}
+
+.footer__citrix-logo {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
 }
