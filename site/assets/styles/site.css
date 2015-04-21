@@ -115,7 +115,7 @@ a:hover {
 }
 .button--pillar {
   color: #2383F5;
-  border-color: #2383F5;
+  border-color: #E5E5E5;
   padding: 7px 25px;
   font-size: 0.65em;
 }
@@ -219,27 +219,39 @@ a:hover {
   margin: 0;
   padding: 0;
   display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-box;
+  display: -o-box;
+  display: box;
   display: -ms-flexbox;
-  /* TWEENER - IE 10 */
   display: -webkit-flex;
-  /* NEW - Chrome */
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
   display: flex;
+  -webkit-lines: multiple;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-box-lines: multiple;
+  -o-box-lines: multiple;
+  box-lines: multiple;
   -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
   flex-wrap: wrap;
+  -ms-flex-pack: distribute;
   -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
   -ms-justify-content: space-around;
+  -o-justify-content: space-around;
   justify-content: space-around;
 }
 .partner-list__item {
   width: 125px;
   height: 125px;
-  padding: 0 7px;
   margin: 0 10px;
-  /* background: oldlace; */
+  padding: 0 7px;
 }
 @media (min-width: 800px) {
   .partner-list__item {
@@ -262,12 +274,6 @@ a:hover {
   transform: translateY(-55%);
 }
 .pillar {
-  width: 100%;
-  min-height: 100px;
-  margin: 0;
-  padding: 2.5em 0;
-}
-.pillar__content {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -297,27 +303,31 @@ a:hover {
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
+  width: 100%;
+  min-height: 100px;
+  margin: 0;
+  padding: 2.5em 0;
+}
+@media only screen and (max-width: 529px), only screen and (min-width: 530px) and (max-width: 949px) {
+  .pillar {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
 }
 .pillar__body {
   width: 100%;
-}
-.pillar__img-wrap {
-  width: 100%;
-  min-height: 100px;
-  background: orange;
-}
-.pillar--flipped .pillar__img-wrap {
-  -webkit-box-ordinal-group: 2;
-  -moz-box-ordinal-group: 2;
-  -ms-box-ordinal-group: 2;
-  -o-box-ordinal-group: 2;
-  box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  -webkit-order: 1;
-  -moz-order: 1;
-  -ms-order: 1;
-  -o-order: 1;
-  order: 1;
+  margin: auto;
+  padding: 0 1.25em;
+  color: #444;
+  font-size: 1.25em;
 }
 .pillar--flipped .pillar__body {
   -webkit-box-ordinal-group: 3;
@@ -332,38 +342,60 @@ a:hover {
   -o-order: 2;
   order: 2;
 }
-@media (min-width: 700px) {
+@media only screen and (max-width: 529px), only screen and (min-width: 530px) and (max-width: 949px) {
   .pillar__body {
-    width: 50%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-box-ordinal-group: 2;
+    -o-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+    -ms-order: 1;
+    -o-order: 1;
+    order: 1;
   }
-  .pillar__img-wrap {
-    width: 45%;
-  }
+}
+.pillar__body p {
+  margin-top: 0;
+  font-size: 0.85em;
+}
+.pillar__img-wrap {
+  width: 100%;
+  min-height: 100px;
+  background: transparent no-repeat center;
+}
+.pillar--flipped .pillar__img-wrap {
+  -webkit-box-ordinal-group: 2;
+  -moz-box-ordinal-group: 2;
+  -ms-box-ordinal-group: 2;
+  -o-box-ordinal-group: 2;
+  box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  -moz-order: 1;
+  -ms-order: 1;
+  -o-order: 1;
+  order: 1;
+}
+.pillar__img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .pillar__header {
   width: 100%;
   margin: 0 0 0.75em;
-  font-size: 2.25em;
+  font-size: 2em;
+  font-weight: 100;
   line-height: 1;
+  text-transform: uppercase;
 }
-.pillar__body {
-  font-size: 1.25em;
-  color: #444;
-}
-.pillar__body--flipped {
-  margin-left: 50%;
-}
-.pillar__body p {
-  margin-top: 0;
-}
-.pillar__icon {
-  width: 90px;
-  height: 90px;
-  border-radius: 45px;
-  border: 1px solid #eee;
-  padding: 20px 10px;
-  text-align: center;
-  display: none;
+@media only screen and (max-width: 529px), only screen and (min-width: 530px) and (max-width: 949px) {
+  .pillar__header {
+    margin-top: 0.75em;
+  }
 }
 .security {
   background: #4A464A;
