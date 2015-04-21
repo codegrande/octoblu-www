@@ -26,6 +26,7 @@ perl -pe $REPLACE_REGEX $SCRIPT_DIR/octoblu-www-green-service.yaml.tmpl > $SCRIP
 kubectl delete -f $SCRIPT_DIR/octoblu-www-${NEW_COLOR}-service.yaml
 kubectl create -f $SCRIPT_DIR/octoblu-www-${NEW_COLOR}-service.yaml
 
+kubectl stop rc -lname=octoblu-www-${NEW_COLOR}
 kubectl delete rc -lname=octoblu-www-${NEW_COLOR}
 kubectl delete pods -lname=octoblu-www-${NEW_COLOR}
 kubectl create -f $SCRIPT_DIR/octoblu-www-${NEW_COLOR}-controller.yaml
