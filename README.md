@@ -4,52 +4,74 @@
 
 ---
 
-###What does that mean!?
+###With Octoblu you can...
 
 ####Connect
-  - Even when your devices are connected, it can be difficult for them to work together.
+Even when your devices are connected, it can be difficult for them to work together. Our platform enables you to have devices communicate seamlessly accross multiple protocols. We support HTTP/S, Websockets, COAP, MQTT and AllJoyn.
+
 
 ####Design
-  - Our designer makes that simple, allowing you to build automations between anything connected to our platform.
+Our designer makes automation simple, allowing you to build interactions between devices visually. You can also share, import & export your automated flows.
+
 
 ####Compute
-  - These interactions are stored in our secure cloud, so you don't have to worry about maintaining them.
+Automated workflows are stored securely and designed to run with high-availability in our cloud.
+You can easily design and deploy automated workflows to run 24/7 in sandboxed containers.
 
-####Security
-  - Security is important to us.
-  - That's why we give you complete control over your devices with our revolutionary security model.
+####Analyze
+With Octoblu, you can gain insights from all data related to your connected
+devices. Not only can you visualize data from your connected devices in our platform, you can also easily feed your device data into your existing big-data aggregation tools like Splunk, ElasticSearch and TempoIQ.
 
----
-
-###Octoblu Components
-
-  [learn more](link to another page)
-
-  *see ./components.txt*
 
 ---
 
-###What can I do with Octoblu?
+###Security
 
-[insert awesome-not-lame examples here]
-[categories: Home | Enterprise | Developer]
-[possible idea format: bill of materials + 1 sentence description. Click to go to import flow.]
+Our platform enables secure device communication using encryption and our fine-grained permissions model. Octoblu was designed with security being a primary focus and not an after thought.
 
 ---
 
-[Get started with Octoblu!](login.octoblu.com)
+###Partners
+  - Intel
+  - Microsoft
+  - Splunk
+  - Amazon Web Services
+  - Plivo
+  - Local Motors
+  - Allseen Alliance
+  - firstbuild
+  - Thingsee
+---
+
+###Use Cases
+  - Thingsee
+    - Logo
+    - Media
+    - Description
+    - Learn More about {{company name}}
+  - Intel
+  - Farmbot
+  - Libelium
 
 ---
 
-Footer Links
-  - Integrations
-  - Pricing
-  - Apps
+[Try Octoblu Now](login.octoblu.com)
+
+---
+
+### Footer Links
+  - Blog
   - Developers
+  - Gateblu
   - Contact Us
-  - Legal (privacy policy/terms)
-  - Social Media
-  - Press Kit
+
+#### Social Links
+  - Github
+  - Twitter
+  - Facebook
+  - LinkedIn
+  - Instagram
+  - Youtube
 
 ---
 

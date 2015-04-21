@@ -9,10 +9,9 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="https://s3.amazonaws.com/octoblu-www/assets/styles/normalize.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/webfonts/ss-social-regular.css">
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/assets/styles/site.css">
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -24,72 +23,86 @@
     <section class="hero">
       <a href="https://app.octoblu.com/login?callbackUrl=%2Fdesign" class="hero__login">Login to Octoblu</a>
       <div class="inner-wrap inner-wrap--hero">
-        <img src="http://s3-us-west-2.amazonaws.com/octoblu-logos/octoblu-inverse-icon.png" alt="Octoblu" class="hero__logo"/>
+        <img src="https://s3.amazonaws.com/octoblu-www/assets/images/octoblu-inverse.png" alt="Octoblu" class="hero__logo"/>
         <h1 class="hero__header">The Internet of <br/> Everything.</h1>
         <h2 class="hero__sub-header">Talking to devices is hard. We did the hard part, so you don't have to.</h2>
 
-        <a class="button button--primary hero__button" href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign">Get Started</a>
+        <a class="button" href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign">Get Started</a>
         <!-- <a class="" href="#">Learn More</a> -->
       </div>
     </section>
 
-    <section class="align-center pillars">
+    <section class="pillars">
       <div class="inner-wrap inner-wrap--pillars">
-        <h2 class="section__header">With Octoblu you can...</h2>
-        <div class="cf grid-list">
-          <div class="grid-list__item">
-            <i class="grid-list__icon fa fa-plug fa-3x"></i>
-            <h3 class="grid-list__header">Connect</h3>
-            <div class="grid-list__body">
+        <!-- <h2 class="section__header">With Octoblu you can...</h2> -->
+        <div class="cf pillar">
+          <i class="pillar__icon fa fa-plug fa-3x"></i>
+          <h3 class="align-center pillar__header">Connect</h3>
+          <div class="pillar__content">
+            <main class="pillar__body">
               <p>
                 Even when your devices are connected, it can be difficult for
                 them to work together. Our platform enables you to have devices
                 communicate seamlessly accross multiple protocols.
-                We support HTTP/S, Websockets, COAP and MQTT.
+                We support HTTP/S, Websockets, COAP, MQTT and AllJoyn.
               </p>
-            </div>
+              <a href="#" class="button button--pillar">Learn More</a>
+            </main>
+            <aside class="pillar__img-wrap"></aside>
           </div>
+        </div>
 
-          <hr>
+        <hr class="hr">
 
-          <div class="grid-list__item">
-            <i class="grid-list__icon fa fa-edit fa-3x"></i>
-            <h3 class="grid-list__header">Design</h3>
-            <div class="grid-list__body">
+        <div class="cf pillar pillar--flipped">
+          <i class="pillar__icon fa fa-edit fa-3x"></i>
+          <h3 class="align-center pillar__header">Design</h3>
+          <div class="pillar__content">
+            <main class="pillar__body">
               <p>
                 Our designer makes automation simple, allowing you to build interactions
                 between devices visually. You can also share, import &amp; export your automated flows.
               </p>
-            </div>
+              <a href="#" class="button button--pillar">Learn More</a>
+            </main>
+            <aside class="pillar__img-wrap"></aside>
           </div>
+        </div>
 
-          <hr>
+        <hr class="hr">
 
-          <div class="grid-list__item">
-            <i class="grid-list__icon fa fa-cloud fa-3x"></i>
-            <h3 class="grid-list__header">Compute</h3>
-            <div class="grid-list__body">
+        <div class="cf pillar">
+          <i class="pillar__icon fa fa-cloud fa-3x"></i>
+          <h3 class="align-center pillar__header">Compute</h3>
+          <div class="pillar__content">
+            <main class="pillar__body">
               <p>
                 Automated workflows are stored securely and designed to run with
                 high-availability in our cloud.
                 You can easily design and deploy automated workflows to run 24/7 in
                 sandboxed containers.
               </p>
-            </div>
+              <a href="#" class="button button--pillar">Learn More</a>
+            </main>
+            <aside class="pillar__img-wrap"></aside>
           </div>
+        </div>
 
-          <hr>
+        <hr class="hr">
 
-          <div class="grid-list__item">
-            <i class="grid-list__icon fa fa-lock fa-3x"></i>
-            <h3 class="grid-list__header">Analyze</h3>
-            <div class="grid-list__body">
-              <p>
-                With Octoblu, you can gain insights from all data related to your connected
-                devices. Not only can you visualize data from your connected devices in our platform, you can also easily feed your device data into your existing big-data aggregation tools like Splunk, ElasticSearch and TempoIQ.
-              </p>
-            </div>
-          </div>
+        <div class="cf pillar pillar--flipped">
+          <i class="pillar__icon fa fa-lock fa-3x"></i>
+          <h3 class="align-center pillar__header">Analyze</h3>
+          <div class="pillar__content">
+          <main class="pillar__body">
+            <p>
+              With Octoblu, you can gain insights from all data related to your connected
+              devices. Not only can you visualize data from your connected devices in our platform, you can also easily feed your device data into your existing big-data aggregation tools like Splunk, ElasticSearch and TempoIQ.
+            </p>
+            <a href="#" class="button button--pillar">Learn More</a>
+          </main>
+          <aside class="pillar__img-wrap"></aside>
+        </div>
         </div>
       </div>
     </section>
@@ -98,6 +111,7 @@
       <div class="inner-wrap">
         <h2 class="security__header">Security</h2>
         <h3 class="security__body">Our platform enables secure device communication using encryption and our fine-grained permissions model. Octoblu was designed with security being a primary focus and not an after thought.</h3>
+        <a href="#" class="button button--pillar">Learn More</a>
       </div>
     </section>
 
@@ -146,9 +160,15 @@
       </div>
     </section>
 
+    <section class="align-center use-cases">
+      <div class="inner-wrap">
+        <h2>Use Cases</h2>
+      </div>
+    </section>
+
     <section class="align-center try-now">
       <div class="inner-wrap">
-        <a href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign" class="button button--secondary">Try Octoblu Now</a>
+        <a href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign" class="button">Try Octoblu Now</a>
       </div>
     </section>
 
