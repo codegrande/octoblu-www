@@ -23,8 +23,11 @@ deploy:
   local_dir: site
   skip_cleanup: true
   bucket: www.octoblu.com
+  endpoint: www.octoblu.com.s3-website-us-west-2.amazonaws.com
+  region: Oregon
   on:
     branch: take-2
+
 - provider: s3
   access_key_id: AKIAIT4X4NDGM2WVL6VA
   secret_access_key: &1
