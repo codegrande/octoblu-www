@@ -20,20 +20,20 @@ deploy:
   access_key_id: AKIAIT4X4NDGM2WVL6VA
   secret_access_key: &1
     secure: m+UKHDt++XxatsRBu075nWhWMUBJOsiWh70Nipdkmt1srsom3sMTi/r50a2jBPOMzYwm2Oc+CNscsUfIiHHaxSzVf32Uq0RLTK9kUZ7T8sqjoT0wvJ8pt+zEt0S2GBRMjzvj0C0S+byaX/9JJOmu0lrLxvOWm6tTPM8XuC4LM6g=
-  local_dir: dpl_cd_upload
-  skip_cleanup: true
-  bucket: octoblu-deploy
-  on:
-    branch: master
-- provider: s3
-  access_key_id: AKIAIT4X4NDGM2WVL6VA
-  secret_access_key: &1
-    secure: m+UKHDt++XxatsRBu075nWhWMUBJOsiWh70Nipdkmt1srsom3sMTi/r50a2jBPOMzYwm2Oc+CNscsUfIiHHaxSzVf32Uq0RLTK9kUZ7T8sqjoT0wvJ8pt+zEt0S2GBRMjzvj0C0S+byaX/9JJOmu0lrLxvOWm6tTPM8XuC4LM6g=
   local_dir: site
   skip_cleanup: true
   bucket: www.octoblu.com
   on:
     branch: take-2
+- provider: s3
+  access_key_id: AKIAIT4X4NDGM2WVL6VA
+  secret_access_key: &1
+    secure: m+UKHDt++XxatsRBu075nWhWMUBJOsiWh70Nipdkmt1srsom3sMTi/r50a2jBPOMzYwm2Oc+CNscsUfIiHHaxSzVf32Uq0RLTK9kUZ7T8sqjoT0wvJ8pt+zEt0S2GBRMjzvj0C0S+byaX/9JJOmu0lrLxvOWm6tTPM8XuC4LM6g=
+  local_dir: dpl_cd_upload
+  skip_cleanup: true
+  bucket: octoblu-deploy
+  on:
+    branch: master
 - provider: codedeploy
   access_key_id: AKIAIT4X4NDGM2WVL6VA
   secret_access_key: *1
