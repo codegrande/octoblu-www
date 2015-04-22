@@ -22,7 +22,7 @@
   <body>
     <section class="hero">
       <a href="https://app.octoblu.com/login?callbackUrl=%2Fdesign" class="hero__login">Login to Octoblu</a>
-      <div class="inner-wrap inner-wrap--hero">
+      <div class="section__inner inner-wrap--hero">
         <img src="https://s3.amazonaws.com/octoblu-www/assets/images/octoblu-inverse.png" alt="Octoblu" class="hero__logo"/>
         <h1 class="hero__header">The Internet of <br/> Everything.</h1>
         <h2 class="hero__sub-header">Talking to devices is hard. We did the hard part, so you don't have to.</h2>
@@ -32,10 +32,10 @@
       </div>
     </section>
 
-    <section class="pillars">
-      <div class="inner-wrap inner-wrap--pillars">
+    <section class="pillars section">
+      <div class="section__inner inner-wrap--pillars">
         <div class="pillar">
-          <main class="align-center pillar__body">
+          <main class="pillar__body">
             <h3 class="pillar__header">Connect</h3>
             <p>
               Even when your devices are connected, it can be difficult for
@@ -43,33 +43,31 @@
               communicate seamlessly accross multiple protocols.
               We support HTTP/S, Websockets, COAP, MQTT and AllJoyn.
             </p>
-            <a href="#" class="button button--pillar">Learn More</a>
+            <a href="#" class="button button--secondary button--pillar">Learn More</a>
           </main>
-          <aside class="pillar__img-wrap">
-            <img src="https://s3.amazonaws.com/octoblu-www/assets/images/connect.jpg" alt="Connect">
-          </aside>
+
+          <img src="https://s3.amazonaws.com/octoblu-www/assets/images/connect.jpg" alt="Connect" class="pillar__img">
         </div>
 
-        <hr class="hr">
+        <hr class="pillar__hr">
 
         <div class="pillar pillar--flipped">
-          <main class="align-center pillar__body">
+          <main class="pillar__body">
             <h3 class="pillar__header">Design</h3>
             <p>
               Our designer makes automation simple, allowing you to build interactions
               between devices visually. You can also share, import &amp; export your automated flows.
             </p>
-            <a href="#" class="button button--pillar">Learn More</a>
+            <a href="#" class="button button--secondary button--pillar">Learn More</a>
           </main>
-          <aside class="pillar__img-wrap">
-            <img src="https://s3.amazonaws.com/octoblu-www/assets/images/designer.jpg" alt="Designer">
-          </aside>
+
+          <img src="https://s3.amazonaws.com/octoblu-www/assets/images/designer.jpg" alt="Designer" class="pillar__img">
         </div>
 
-        <hr class="hr">
+        <hr class="pillar__hr">
 
         <div class="pillar">
-          <main class="align-center pillar__body">
+          <main class="pillar__body">
             <h3 class="pillar__header">Compute</h3>
             <p>
               Automated workflows are stored securely and designed to run with
@@ -77,45 +75,41 @@
               You can easily design and deploy automated workflows to run 24/7 in
               sandboxed containers.
             </p>
-            <a href="#" class="button button--pillar">Learn More</a>
+            <a href="#" class="button button--secondary button--pillar">Learn More</a>
           </main>
 
-          <aside class="pillar__img-wrap">
-            <img src="https://s3.amazonaws.com/octoblu-www/assets/images/compute.jpg" alt="Compute">
-          </aside>
+          <img src="https://s3.amazonaws.com/octoblu-www/assets/images/compute.jpg" alt="Compute" class="pillar__img">
         </div>
 
-        <hr class="hr">
+        <hr class="pillar__hr">
 
         <div class="pillar pillar--flipped">
-          <main class="align-center pillar__body">
+          <main class="pillar__body">
             <h3 class="pillar__header">Analyze</h3>
             <p>
               With Octoblu, you can gain insights from all data related to your connected
               devices. Not only can you visualize data from your connected devices in our platform, you can also easily feed your device data into your existing big-data aggregation tools like Splunk, ElasticSearch and TempoIQ.
             </p>
-            <a href="#" class="button button--pillar">Learn More</a>
+            <a href="#" class="button button--secondary button--pillar">Learn More</a>
           </main>
 
-          <aside class="pillar__img-wrap">
-            <img src="https://s3.amazonaws.com/octoblu-www/assets/images/analyze.jpg" alt="Analyze">
-          </aside>
+          <img src="https://s3.amazonaws.com/octoblu-www/assets/images/analyze.jpg" alt="Analyze" class="pillar__img">
         </div>
-        
+
       </div>
     </section>
 
-    <section class="align-center security">
-      <div class="inner-wrap">
-        <h2 class="security__header">Security</h2>
+    <section class="align-center section security">
+      <div class="section__inner">
+        <h2 class="section__header security__header">Security</h2>
         <h3 class="security__body">Our platform enables secure device communication using encryption and our fine-grained permissions model. Octoblu was designed with security being a primary focus and not an after thought.</h3>
-        <a href="#" class="button button--pillar">Learn More</a>
+        <a href="#" class="button button--secondary">Learn More</a>
       </div>
     </section>
 
-    <section class="align-center partners">
-      <div class="inner-wrap">
-        <h2>Partners</h2>
+    <section class="align-center section partners">
+      <div class="section__inner">
+        <h2 class="section__header">Partners</h2>
 
         <ul class="partner-list">
           <li class="partner-list__item partner-list__item--intel">
@@ -158,21 +152,38 @@
       </div>
     </section>
 
-    <section class="align-center use-cases">
-      <div class="inner-wrap">
-        <h2>Use Cases</h2>
+    <section class="align-center section solutions">
+      <div class="section__inner">
+        <h2>Solutions</h2>
+        <p>
+          Our platform is flexible and can provide IoT solutions in for multiple domains like ....
+        </p>
+        <ul class="solutions__list">
+          <li class="solutions__list-item">Home</li>
+          <li class="solutions__list-item">Enterprise</li>
+          <li class="solutions__list-item">Manufacturing</li>
+          <li class="solutions__list-item">Healthcare</li>
+          <li class="solutions__list-item">Retail</li>
+          <li class="solutions__list-item">Logistics</li>
+          <li class="solutions__list-item">Makers</li>
+          <li class="solutions__list-item">Smart Cities </li>
+        </ul>
+
+        <a href="#" class="button button--solutions">Learn More</a>
       </div>
     </section>
 
-    <section class="align-center try-now">
-      <div class="inner-wrap">
+    <section class="align-center section try-now">
+      <div class="section__inner">
         <a href="https://login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign" class="button">Try Octoblu Now</a>
       </div>
     </section>
 
-    <footer class="align-center footer">
-      <div class="inner-wrap">
+    <footer class="align-center section footer">
+      <div class="section__inner">
         <p class="footer__links">
+          <a href="#" class="footer__link">Use Cases</a> •
+          <a href="#" class="footer__link">Integrations</a> •
           <a href="//blog.citrix.com/team/octoblu/" class="footer__link">Blog</a> •
           <a href="//developer.octoblu.com" class="footer__link">Developers</a> •
           <a href="https://gateblu.octoblu.com/" class="footer__link" title="Octoblu's IoT Gateway">Gateblu</a> •
@@ -212,6 +223,6 @@
       ga.src = ('https:'   == document.location.protocol ? 'https://ssl'   : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-   </script>
+    </script>
   </body>
 </html>

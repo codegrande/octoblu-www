@@ -8,22 +8,34 @@
 
   color: #FFF;
   text-transform: uppercase;
+
+  &:hover {
+    background: #FFF;
+    border-color: #FFF;
+
+    color: #2383F5;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
 }
 
-.button:hover {
-  text-decoration: none;
-  transition: all 0.5s ease;
+.button--secondary {
+  padding: 7px 25px;
+  font-size: 13px;
+  color: #FFF;
+
+  &:hover {
+    background: #2383F5;
+    color: #FFF;
+    border-color: #2383F5;
+  }
 }
 
 .button--pillar {
   color: #2383F5;
   border-color: #E5E5E5;
-  padding: 7px 25px;
-  font-size: 0.65em;
-}
 
-.button--pillar:hover {
-  background: #2383F5;
-  border-color: #2383F5;
-  color: #FFF;
+  &:hover {
+    color: #FFF;
+  }
 }
