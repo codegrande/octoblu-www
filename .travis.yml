@@ -13,4 +13,4 @@ deploy:
   endpoint: www.octoblu.com.s3-website-us-west-2.amazonaws.com
   region: us-west-2
   on:
-    branch: take-2
+    branch: master
