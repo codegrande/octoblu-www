@@ -1,0 +1,39 @@
+.partner-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .flexbox();
+  .flex-wrap(wrap);
+  .justify-content(space-around);
+}
+
+.partner-list__item {
+  width: 125px;
+  height: 125px;
+  margin: 0 10px;
+  padding: 0 7px;
+}
+
+@media (min-width: 800px) {
+  .partner-list__item {
+    width: 200px;
+    height: 200px;
+    padding: 0 15px;
+    margin:  0 20px;
+  }
+}
+
+.partner-list__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+     -moz-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+       -o-transform: translateY(-55%);
+          transform: translateY(-55%);
+}

@@ -1,0 +1,105 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+html, body {
+  height: 100%;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.75em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: 4.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.inner-wrap--hero {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-55%);
+     -moz-transform: translateY(-55%);
+      -ms-transform: translateY(-55%);
+       -o-transform: translateY(-55%);
+          transform: translateY(-55%);
+}
+
+.align-center {
+  text-align: center
+}
