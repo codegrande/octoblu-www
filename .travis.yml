@@ -2,17 +2,6 @@ language: shell
 sudo: false
 cache:
   bundler: true
-env:
-  global:
-  - AWS_ACCESS_KEY_ID=AKIAIT4X4NDGM2WVL6VA
-  - DOCKER_USERNAME=octoblu
-  - DEPLOY_APPLICATION_NAME=octoblu-www
-  - DEPLOY_REGION=us-west-2
-  - DEPLOY_BUCKET=octoblu-deploy
-  - DEPLOYMENT_GROUP=master
-  - DEPLOY_KEY=octoblu-www/octoblu-www-$TRAVIS_COMMIT.zip
-  - secure: LG0Ua/YNKxob241QFNeS/YlD7FzGuK4Et8h4DbY3Kd9+eaKZApUsiULghUEQ20ywseQ3HIFXbk3K7uqCyxKUd50VPqHdKir3c/sDFtG8/+AE5CvzpuPMi5tZg4oRESRZkBqOlnQgTA+U+RUk1qTrwMJkaLQ3J/YEHOXrShLVxvM=
-  - secure: EIQxA1G2xTRTgT7YQ2pCfHwhPLMraVkXayUlI6O78VdRzLyYnpbP1LCe9/gR6WUPBkvgscdae4AEhIzvqlgMBauMMC0uGCRpPOtj8cytKrMzypaODAQSIEev1B38xjm0BlFgHr5VWi3hf9gpf8x8a7rsaE54p4Aasm8h3YAHt48=
 deploy:
 - provider: s3
   access_key_id: AKIAIT4X4NDGM2WVL6VA
