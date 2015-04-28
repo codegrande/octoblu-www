@@ -130,6 +130,17 @@ li {
 .button--learn-more {
   margin-top: 1.2em;
 }
+.button--interior {
+  margin-top: 1.2em;
+  padding: 10px 30px;
+  border-color: #2383F5;
+  color: #2383F5;
+}
+.button--interior:hover {
+  background: #2383F5;
+  color: #FFF;
+  border-color: #2383F5;
+}
 .footer {
   background: #0db2ef;
   color: #C3E7F4;
