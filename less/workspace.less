@@ -1,3 +1,8 @@
+.fixed-element {
+  position: fixed;
+  top: 20px;
+}
+
 .workspace {
   height: 100%;
 
@@ -12,15 +17,23 @@
     margin: 0 auto;
     padding: 20px 0;
 
-    @media @desktop, @desktop-xl {
+    @media @tablet, @desktop, @desktop-xl {
       width: 75%;
-      padding: 50px 0;
+      padding: 100px 0;
     }
   }
 
   &__logo {
     width: 100px;
     height: 100px;
+
+    @media @tablet, @desktop, @desktop-xl {
+      .fixed-element;
+      left: 5%;
+
+      width: 60px;
+      height: 60px;
+    }
   }
 
   &__header {
@@ -53,26 +66,47 @@
     text-align: left;
   }
 
-  .button {
-    background-color: #053C6F;
-
-    &:hover {
-      background-color: #053C6F;
-      color: #FFF;
-    }
-  }
-
   p {
     margin: 30px 0;
 
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.4;
     text-align: left;
 
     @media @tablet, @desktop, @desktop-xl {
       text-align: center;
-      font-size: 1.25em;
+      font-size: 1.3em;
       line-height: 1.5;
     }
+  }
+}
+
+.workspace__button {
+  .button;
+
+  background-color: #053C6F;
+  padding: 10px 25px;
+
+
+  &:hover {
+    background-color: #053C6F;
+    color: #FFF;
+  }
+
+  @media @tablet, @desktop, @desktop-xl{
+    display: none;
+  }
+
+}
+
+.workspace__button--fixed {
+  .workspace__button;
+
+  display: none;
+
+  @media @tablet, @desktop, @desktop-xl {
+    .fixed-element;
+    right: 5%;
+    display: block;
   }
 }

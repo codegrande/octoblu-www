@@ -685,6 +685,10 @@ li {
   background: #4A464A;
   color: #0db2ef;
 }
+.fixed-element {
+  position: fixed;
+  top: 20px;
+}
 .workspace {
   height: 100%;
   color: #434343;
@@ -697,15 +701,24 @@ li {
   margin: 0 auto;
   padding: 20px 0;
 }
-@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
   .workspace__inner {
     width: 75%;
-    padding: 50px 0;
+    padding: 100px 0;
   }
 }
 .workspace__logo {
   width: 100px;
   height: 100px;
+}
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__logo {
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    width: 60px;
+    height: 60px;
+  }
 }
 .workspace__header {
   color: #053C6F;
@@ -734,23 +747,79 @@ li {
 .workspace__bucket-list {
   text-align: left;
 }
-.workspace .button {
-  background-color: #053C6F;
-}
-.workspace .button:hover {
-  background-color: #053C6F;
-  color: #FFF;
-}
 .workspace p {
   margin: 30px 0;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.4;
   text-align: left;
 }
 @media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
   .workspace p {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.3em;
     line-height: 1.5;
+  }
+}
+.workspace__button {
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  padding: 15px 50px;
+  display: inline-block;
+  background: transparent;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: #053C6F;
+  padding: 10px 25px;
+}
+.workspace__button:hover {
+  background: #FFF;
+  border-color: #FFF;
+  color: #2383F5;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.workspace__button:hover {
+  background-color: #053C6F;
+  color: #FFF;
+}
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__button {
+    display: none;
+  }
+}
+.workspace__button--fixed {
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  padding: 15px 50px;
+  display: inline-block;
+  background: transparent;
+  color: #FFF;
+  text-transform: uppercase;
+  background-color: #053C6F;
+  padding: 10px 25px;
+  display: none;
+}
+.workspace__button--fixed:hover {
+  background: #FFF;
+  border-color: #FFF;
+  color: #2383F5;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.workspace__button--fixed:hover {
+  background-color: #053C6F;
+  color: #FFF;
+}
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__button--fixed {
+    display: none;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__button--fixed {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    display: block;
   }
 }
