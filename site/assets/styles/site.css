@@ -685,3 +685,72 @@ li {
   background: #4A464A;
   color: #0db2ef;
 }
+.workspace {
+  height: 100%;
+  color: #434343;
+  text-align: center;
+  background: #FEFEFF;
+}
+.workspace__inner {
+  width: 94%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__inner {
+    width: 75%;
+    padding: 50px 0;
+  }
+}
+.workspace__logo {
+  width: 100px;
+  height: 100px;
+}
+.workspace__header {
+  color: #053C6F;
+  font-size: 2.75em;
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__header {
+    font-size: 4em;
+  }
+}
+.workspace__sub-header {
+  margin-bottom: 0.5em;
+  color: #053C6F;
+  font-size: 1.75em;
+}
+@media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace__sub-header {
+    font-size: 2em;
+  }
+}
+.workspace__bucket {
+  background: #FFF;
+  width: 50%;
+  float: left;
+}
+.workspace__bucket-list {
+  text-align: left;
+}
+.workspace .button {
+  background-color: #C68BB7;
+}
+.workspace .button:hover {
+  background-color: #A05D8F;
+  color: #FFF;
+}
+.workspace p {
+  margin: 30px 0;
+  font-size: 1em;
+  line-height: 1.4;
+  text-align: left;
+}
+@media only screen and (min-width: 530px) and (max-width: 949px), only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
+  .workspace p {
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5;
+  }
+}
