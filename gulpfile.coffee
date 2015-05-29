@@ -6,6 +6,7 @@ gulp.task 'server',  ->
   gulp
     .src 'site'
     .pipe webserver
+      host: '0.0.0.0'
       livereload: true
       open: true
 
