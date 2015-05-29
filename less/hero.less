@@ -60,6 +60,53 @@
   text-transform: none;
 }
 
+
+@-webkit-keyframes bounce {
+  0%   { -webkit-transform: translate(0, 0); }
+  50%  { -webkit-transform: translate(0, 15px); }
+  100% { -webkit-transform: translate(0, 0); }
+}
+
+@-moz-keyframes bounce {
+  0%   { -webkit-transform: translate(0, 0); }
+  50%  { -webkit-transform: translate(0, 15px); }
+  100% { -webkit-transform: translate(0, 0); } }
+
+@-o-keyframes bounce {
+  0%   { -webkit-transform: translate(0, 0); }
+  50%  { -webkit-transform: translate(0, 15px); }
+  100% { -webkit-transform: translate(0, 0); }
+}
+
+@keyframes bounce {
+  0%   { -webkit-transform: translate(0, 0); }
+  50%  { -webkit-transform: translate(0, 15px); }
+  100% { -webkit-transform: translate(0, 0); }
+}
+
+.hero__scroll-button {
+  position: absolute;
+  bottom: 30px;
+  right: 50%;
+
+  display: block;
+  width: 30px;
+  margin-right: -15px;
+
+  color: white;
+  font-size: 25px;
+
+  -webkit-transition: opacity 0.33s ease-out;
+     -moz-transition: opacity 0.33s ease-out;
+      -ms-transition: opacity 0.33s ease-out;
+       -o-transition: opacity 0.33s ease-out;
+
+  -webkit-animation: bounce 2.5s infinite;
+     -moz-animation: bounce 1.5s infinite;
+       -o-animation: bounce 1.5s infinite;
+          animation: bounce 1.5s infinite;
+}
+
 @media (min-width: 960px) {
   .hero__header { font-size: 4.75em; }
   .hero__sub-header { font-size: 2.25em; font-weight: 200; }

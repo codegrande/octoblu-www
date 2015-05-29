@@ -8,6 +8,7 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/webfonts/ss-social-regular.css">
   <link rel="stylesheet" href="/assets/styles/site.css">
 
@@ -25,11 +26,12 @@
       <img src="//s3.amazonaws.com/octoblu-www/assets/images/octoblu-inverse.png" alt="Octoblu" class="hero__logo"/>
       <h1 class="hero__header">The Integration of <br/> Everything.</h1>
       <h2 class="hero__sub-header">Connect Anything. Connect Everything.</h2>
-
       <a class="button" href="//login.octoblu.com/signup?callback=https:%2F%2Fapp.octoblu.com:443%2Fapi%2Fsession%3FcallbackUrl%3D%252Fdesign">Get Started</a>
-
-      <a href="#main" class="scroll-to-buttonx"></a>
     </div>
+
+    <a id="scroll-to-main-btn" href="#main" class="hero__scroll-button">
+      <i class="fa fa-chevron-down"></i>
+    </a>
   </section>
 
   <section id="main" class="pillars section">
@@ -223,6 +225,16 @@
     </div>
   </footer>
 
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+
+  <script>
+    $("#scroll-to-main-btn").click(function() {
+      console.log('HASH', this.hash);
+      $.scrollTo(this.hash, 750);
+      return false;
+    });
+  </script>
   <script type="text/javascript">  (function() {
     var ga = document.createElement('script');     ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:'   == document.location.protocol ? '//ssl'   : 'http://www') + '.google-analytics.com/ga.js';
