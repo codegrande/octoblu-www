@@ -4,9 +4,9 @@ cache:
   bundler: true
 deploy:
 - provider: s3
-  access_key_id: AKIAIT4X4NDGM2WVL6VA
+  access_key_id: AKIAJH2D5IPIRHYJT5IA
   secret_access_key: &1
-    secure: m+UKHDt++XxatsRBu075nWhWMUBJOsiWh70Nipdkmt1srsom3sMTi/r50a2jBPOMzYwm2Oc+CNscsUfIiHHaxSzVf32Uq0RLTK9kUZ7T8sqjoT0wvJ8pt+zEt0S2GBRMjzvj0C0S+byaX/9JJOmu0lrLxvOWm6tTPM8XuC4LM6g=
+    secure: "aQ3tqD9yWgsqa2/4u0l6xDti68IusJGM0u7H6uquF1lxKpdqV+8jysaACs+l01DGYV2mJZMk9Je1XxYEcKhDKTuL8/npgFIUzWCaHYi+VioE413IlX1Ecl1W2LeKZLG23ITc5d+8whgQ0HizlSdrFH06OSMeHA3nzFwujOAqAk8="
   local_dir: site
   skip_cleanup: true
   bucket: www.octoblu.com
@@ -15,9 +15,8 @@ deploy:
   on:
     branch: master
 - provider: s3
-  access_key_id: AKIAIT4X4NDGM2WVL6VA
-  secret_access_key: &1
-    secure: m+UKHDt++XxatsRBu075nWhWMUBJOsiWh70Nipdkmt1srsom3sMTi/r50a2jBPOMzYwm2Oc+CNscsUfIiHHaxSzVf32Uq0RLTK9kUZ7T8sqjoT0wvJ8pt+zEt0S2GBRMjzvj0C0S+byaX/9JJOmu0lrLxvOWm6tTPM8XuC4LM6g=
+  access_key_id: AKIAJH2D5IPIRHYJT5IA
+  secret_access_key: *1
   local_dir: site
   skip_cleanup: true
   bucket: www-staging.octoblu.com
