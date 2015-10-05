@@ -166,6 +166,11 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
+h4 {
+  font-size: 3.5em;
+  margin-bottom: 0.3em;
+  text-transform: uppercase;
+}
 @media (min-width: 800px) {
   h1 {
     font-size: 4.75em;
@@ -189,6 +194,9 @@ ol {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+ul.a {
+  list-style: circle;
 }
 li {
   margin: 0;
@@ -700,6 +708,12 @@ li {
   max-width: 1240px;
   margin: 0 auto;
   padding: 50px 0;
+}
+.section__inner_2 {
+  width: 75%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
 }
 @media only screen and (min-width: 950px) and (max-width: 1128px), only screen and (min-width: 1129px) {
   .section__inner {
